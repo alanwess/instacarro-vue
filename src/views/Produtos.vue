@@ -7,25 +7,25 @@
             </div>
             <div class="info-carro">
                 <div class="num-info">
-                    <b-col sm="12" md="6" class="tempo-restante">
+                    <div class="tempo-restante">
                         <p>TEMPO RESTANTE</p>
                         <span><vue-countdown :seconds="carro.remainingTime"></vue-countdown></span>
-                    </b-col>
-                    <b-col sm="12" md="6" class="ultima-oferta">
+                    </div>
+                    <div class="ultima-oferta">
                         <p>ULTIMA OFERTA</p>
                         <span>{{ 'R$ ' + formatMoney(getLastBid(carro.bids)) }}</span>
-                    </b-col>
+                    </div>
                 </div>
                 <div class="nome-info">
                     <h2>{{ carro.make + carro.version }}</h2>
                 </div>
                 <div class="meta-info">
-                    <b-col sm="12" md="6" class="ano-carro">
+                    <div class="ano-carro">
                         <span>{{ carro.year }}</span>
-                    </b-col>
-                    <b-col sm="12" md="6" class="km-carro">
+                    </div>
+                    <div sm="12" md="6" class="km-carro">
                         <span>{{ formatKM(carro.km) }} KM</span>
-                    </b-col>
+                    </div>
                 </div>
                 <div @click="showSelectedCar(carro.make + carro.version, i)" class="div-btn-oferta">
                     <p class="noselect btn-fazer-oferta">FAZER OFERTA</p>
@@ -137,7 +137,7 @@
             padding-left: 100px;
             padding-right: 100px;
             display: grid;
-            grid-template-columns: repeat(4, 25%);
+            grid-template-columns: repeat(3, 33.3%);
             grid-gap: 30px;
         }
     }
@@ -192,6 +192,7 @@
     }
     
     .tempo-restante, .ultima-oferta {
+        width: 50%;
         font-size: 8px;
         text-align: center;
     }
@@ -227,6 +228,7 @@
     .nome-info h2 {
         font-size: 16px;
         font-weight: bold;
+	margin-top: 7px;
     }
 
     .meta-info {
@@ -242,6 +244,7 @@
     }
 
     .ano-carro, .km-carro {
+        width: 50%;
         font-size: 12px;
         text-align: center;
     }

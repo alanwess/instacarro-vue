@@ -43,7 +43,9 @@
     width: 100%;
     display: flex;
     align-items: center;
-  }
+    
+cursor: pointer;
+    }
 
   .box-user {
     display: flex;
@@ -62,7 +64,8 @@
   .user-info > img {
     height: 40px;
     margin-top: 10px;
-  }
+    cursor: pointer;
+    }
 
   .detalhes {
     height: 5px;
