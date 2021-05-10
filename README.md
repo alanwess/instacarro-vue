@@ -1,24 +1,16 @@
-# bootstrap-vue-app
+# instacarro-vue
 
-## Project setup
+## Instalar dependências
 ```
-npm install
+npm install ou npm i
 ```
 
-### Compiles and hot-reloads for development
+### Compilar em localhost (Default localhost:8080)
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Gerar build para produção
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
